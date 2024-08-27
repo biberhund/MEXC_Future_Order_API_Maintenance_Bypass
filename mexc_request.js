@@ -43,6 +43,8 @@ async function sendRequest() {
                 "x-kl-ajax-request": "Ajax_Request",
                 "x-mxc-nonce": sign.time,
                 "x-mxc-sign": sign.sign,
+                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.142.86 Safari/537.36'
+
             }
         });
         console.log("Response Data:", response.data);
