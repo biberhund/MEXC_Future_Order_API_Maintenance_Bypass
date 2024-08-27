@@ -23,16 +23,16 @@ Before you begin, ensure you have the following installed:
    cd Future_Order_API_Maintenance_Bypass
    ```
 
-2. **Install Node.js dependencies**:
+2. **Install dependencies**:
+   for nodejs :
    ```bash
    npm install axios md5
    ```
+   for python :
+      ```bash
+   pip install curl-cffi
+   ```
 
-3. **Prepare the JavaScript file**:
-   Ensure the JavaScript code is saved as `mexc_request.js` in the project directory.
-
-4. **Prepare the Python file**:
-   Ensure the Python code is saved as `execute_mexc_request.py` in the project directory.
 
 ## Obtaining the 'WEB' Cookie
 
@@ -45,7 +45,7 @@ To use this method, you need to authenticate with MEXC using your browser's logi
 4. **Expand the "Cookies" section** and select the MEXC domain.
 5. **Find the cookie named "u_id"**:
    - Copy its value (it should start with "WEB").
-   - Use this value as the `key` in the JavaScript code.
+   - Use this value as the `key` in the code.
 
 ## Usage
 
@@ -56,36 +56,29 @@ The JavaScript file (`mexc_request.js`) handles signing and sending the request 
 To run the JavaScript code in the terminal:
 
 ```bash
-node mexc_request.js '<json_string>'
-```
-
-Replace `<json_string>` with the JSON string of your request object. Example:
-
-```bash
-node mexc_request.js '{"symbol": "BTC_USDT", "side": 1, "openType": 1, "type": "1", "vol": 170, "leverage": 20, "price": 2.5, "priceProtect": "0"}'
+node mexc_request.js 
 ```
 
 ### 2. Running the Python Code
 
-Alternatively, you can use Python to execute the JavaScript file with the necessary parameters.
+Alternatively, you can use Python to do the same thing.
 
 To run the Python code:
 
 ```bash
-python3 execute_mexc_request.py
+python3 mexc_request.py
 ```
 
-This command will internally call the `mexc_request.js` file, passing the JSON object as a command-line argument, and print the response from the MEXC Futures API.
 
 ### Example Workflow
 
-1. **Edit the Python Object**: Modify the `obj` in `execute_mexc_request.py` to set your desired parameters for the API request.
-2. **Run the Python Script**: Execute the Python script as described above.
+1. **Edit the Python Object**: Modify the `obj` in `mexc_request.py` or in `mexc_request.js` to set your desired parameters for the API request.
+2. **Run the  Script**: Execute the  script as described above.
 3. **View the Output**: The response from the MEXC Futures API will be displayed in the terminal.
 
 ### Important Notes
 
-- Ensure that the `key` variable in the JavaScript code is set to the correct value of your 'WEB' cookie.
+- Ensure that the `key` variable in the code is set to the correct value of your 'WEB' cookie.
 - If errors occur, check the console output, as both Python and JavaScript files will provide detailed error messages.
 
 ## Conclusion
