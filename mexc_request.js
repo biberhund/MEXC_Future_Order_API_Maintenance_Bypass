@@ -14,7 +14,16 @@ var mexc_crypto = (key, obj) => {
 let key = 'WEB...'; 
 
 
-let obj = JSON.parse(process.argv[2]);
+let obj = {
+    "symbol": "BTC_USDT",
+    "side": 1,
+    "openType": 1,
+    "type": "1",
+    "vol": 170,
+    "leverage": 20,
+    "price": 2.5,
+    "priceProtect": "0"
+};
 
 
 let sign = mexc_crypto(key, obj);
