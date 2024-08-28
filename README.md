@@ -19,8 +19,8 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/ismail-amouma/Future_Order_API_Maintenance_Bypass
-   cd Future_Order_API_Maintenance_Bypass
+   git clone https://github.com/ismail-amouma/MEXC_Future_Order_API_Maintenance_Bypass
+   cd MEXC_Future_Order_API_Maintenance_Bypass
    ```
 
 2. **Install dependencies**:
