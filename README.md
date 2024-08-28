@@ -2,7 +2,7 @@
 
 This project provides a method to bypass the maintenance mode of the MEXC Futures Order API. 
 
-You can run the code directly from JavaScript or use Python to execute it. This method utilizes MEXC's internal API by authenticating with a browser login session, specifically using the 'WEB' cookie. This cookie is crucial for the bypass to work, and I'll explain how to obtain it below.
+You can run the code  from JavaScript or Python to execute it. This method utilizes MEXC's internal API by authenticating with a browser login session, specifically using the 'WEB' cookie. This cookie is crucial for the bypass to work, and I'll explain how to obtain it below.
 
 ## Disclaimer
 
