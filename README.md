@@ -82,12 +82,6 @@ python3 mexc_request.py
 - Ensure that the `key` variable in the code is set to the correct value of your 'WEB' cookie.
 - If errors occur, check the console output, as both Python and JavaScript files will provide detailed error messages.
 
-## Conclusion
-
-This project allows you to bypass the MEXC Futures Order API maintenance mode by utilizing an internal API with authentication through a browser login session. By following the instructions, you can easily authenticate and execute your API requests without needing to wait for the maintenance to end. This method is provided for free to ensure that everyone has fair access to these capabilities.
-
-Feel free to customize the code as needed for your specific use case.
-
 ## Support
 
 If you found this repository helpful, please give it a star to show your support! Your feedback and contributions are welcome to improve and expand the functionality of this project.]
